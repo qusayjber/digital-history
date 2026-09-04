@@ -1,0 +1,39 @@
+﻿# =========================================================
+# Digital History - Git Ignore
+# =========================================================
+
+# Local configuration
+/includes/config.php
+*.local.php
+
+# Environment files
+.env
+.env.*
+!.env.example
+
+# Backups / database dumps
+*.backup.*
+*.bak
+*.old
+*.sql.bak
+schema.backup.sql
+schema.before-cleanup.sql
+schema.pristine.sql
+
+# Runtime uploads
+/uploads/*
+!/uploads/.gitkeep
+
+# Logs
+*.log
+
+# IDE / editor
+.vscode/
+.idea/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# PHP testing/runtime
+.phpunit.result.cache

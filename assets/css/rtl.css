@@ -1,0 +1,636 @@
+/* ======================================================
+   DIGITAL HISTORY - RTL SUPPORT
+   ====================================================== */
+
+/* ===== Base RTL ===== */
+[dir="rtl"] {
+    text-align: right;
+    direction: rtl;
+}
+
+[dir="rtl"] * {
+    direction: rtl;
+}
+
+/* ===== Typography ===== */
+[dir="rtl"] h1,
+[dir="rtl"] h2,
+[dir="rtl"] h3,
+[dir="rtl"] h4,
+[dir="rtl"] h5,
+[dir="rtl"] h6 {
+    text-align: right;
+}
+
+[dir="rtl"] p {
+    text-align: right;
+}
+
+/* ===== Logo ===== */
+[dir="rtl"] .logo-highlight {
+    margin-left: 0;
+    margin-right: 2px;
+}
+
+[dir="rtl"] .header-logo a {
+    flex-direction: row-reverse;
+}
+
+[dir="rtl"] .logo-text {
+    direction: ltr;
+    display: inline-block;
+}
+
+/* ===== Navigation ===== */
+[dir="rtl"] .dropdown-arrow {
+    margin-left: 0;
+    margin-right: 2px;
+}
+
+[dir="rtl"] .dropdown-menu {
+    left: auto;
+    right: 0;
+}
+
+[dir="rtl"] .main-nav ul li a {
+    text-align: right;
+}
+
+/* ===== Language Switcher ===== */
+[dir="rtl"] .lang-dropdown {
+    right: auto;
+    left: 0;
+}
+
+[dir="rtl"] .lang-current {
+    direction: ltr;
+}
+
+/* ===== User Menu ===== */
+[dir="rtl"] .user-dropdown {
+    right: auto;
+    left: 0;
+}
+
+[dir="rtl"] .user-btn {
+    direction: ltr;
+}
+
+[dir="rtl"] .user-btn i {
+    margin-left: 0.3rem;
+    margin-right: 0;
+}
+
+/* ===== Auth Buttons ===== */
+[dir="rtl"] .auth-buttons .btn {
+    direction: ltr;
+}
+
+/* ===== Search Bar ===== */
+[dir="rtl"] .search-container input {
+    text-align: right;
+    direction: rtl;
+}
+
+[dir="rtl"] .search-container input::placeholder {
+    text-align: right;
+}
+
+[dir="rtl"] .search-autocomplete {
+    left: auto;
+    right: 0;
+}
+
+[dir="rtl"] .search-autocomplete a {
+    direction: rtl;
+    text-align: right;
+}
+
+[dir="rtl"] .search-autocomplete a .fa-icon {
+    margin-left: 0.8rem;
+    margin-right: 0;
+}
+
+/* ===== Timeline ===== */
+[dir="rtl"] .timeline-line {
+    left: auto;
+    right: 50%;
+    transform: translateX(50%);
+}
+
+[dir="rtl"] .timeline-dot {
+    left: auto;
+    right: 50%;
+    transform: translate(50%, -50%);
+}
+
+[dir="rtl"] .timeline-item {
+    justify-content: flex-start;
+}
+
+[dir="rtl"] .timeline-item:nth-child(odd) {
+    padding-right: 0;
+    padding-left: 3rem;
+}
+
+[dir="rtl"] .timeline-item:nth-child(even) {
+    padding-left: 0;
+    padding-right: 3rem;
+    margin-left: 0;
+    margin-right: 50%;
+}
+
+[dir="rtl"] .timeline-content {
+    margin-left: 0;
+    margin-right: 40px;
+    text-align: right;
+}
+
+[dir="rtl"] .timeline-year {
+    text-align: right;
+}
+
+[dir="rtl"] .timeline-title {
+    text-align: right;
+}
+
+[dir="rtl"] .timeline-description {
+    text-align: right;
+}
+
+/* ===== Cards ===== */
+[dir="rtl"] .card {
+    text-align: right;
+}
+
+[dir="rtl"] .card-title {
+    text-align: right;
+}
+
+[dir="rtl"] .card-description {
+    text-align: right;
+}
+
+[dir="rtl"] .card .btn {
+    direction: ltr;
+}
+
+/* ===== Section Headers ===== */
+[dir="rtl"] .section-header {
+    text-align: center;
+}
+
+[dir="rtl"] .section-header h2 {
+    text-align: center;
+}
+
+[dir="rtl"] .section-header p {
+    text-align: center;
+}
+
+/* ===== Breadcrumbs ===== */
+[dir="rtl"] .breadcrumbs ol li:not(:last-child)::after {
+    content: '/';
+    margin: 0 0.3rem;
+}
+
+[dir="rtl"] .breadcrumbs ol {
+    flex-direction: row-reverse;
+}
+
+[dir="rtl"] .breadcrumbs ol li {
+    flex-direction: row-reverse;
+}
+
+[dir="rtl"] .breadcrumbs ol li a {
+    display: inline-block;
+}
+
+/* ===== Footer ===== */
+[dir="rtl"] .footer-brand p {
+    text-align: right;
+}
+
+[dir="rtl"] .footer-links h4 {
+    text-align: right;
+}
+
+[dir="rtl"] .footer-links ul li a {
+    text-align: right;
+    display: block;
+}
+
+[dir="rtl"] .footer-social {
+    justify-content: flex-start;
+}
+
+[dir="rtl"] .footer-bottom {
+    flex-direction: row-reverse;
+}
+
+[dir="rtl"] .footer-bottom p {
+    text-align: right;
+}
+
+/* ===== Hero ===== */
+[dir="rtl"] .hero-content h1 {
+    direction: ltr;
+    display: inline-block;
+    width: 100%;
+}
+
+[dir="rtl"] .hero-content .subtitle {
+    text-align: center;
+}
+
+[dir="rtl"] .hero-content .description {
+    text-align: center;
+}
+
+[dir="rtl"] .hero-buttons {
+    flex-direction: row-reverse;
+}
+
+[dir="rtl"] .hero-scroll {
+    direction: ltr;
+}
+
+/* ===== Pagination ===== */
+[dir="rtl"] .pagination-list {
+    flex-direction: row-reverse;
+}
+
+[dir="rtl"] .pagination-list li a,
+[dir="rtl"] .pagination-list li span {
+    direction: ltr;
+}
+
+/* ===== Forms ===== */
+[dir="rtl"] input,
+[dir="rtl"] select,
+[dir="rtl"] textarea {
+    text-align: right;
+}
+
+[dir="rtl"] label {
+    text-align: right;
+    display: block;
+}
+
+[dir="rtl"] .form-group {
+    text-align: right;
+}
+
+/* ===== Modal ===== */
+[dir="rtl"] .modal-content {
+    text-align: right;
+}
+
+[dir="rtl"] .modal-close {
+    right: auto;
+    left: 1rem;
+}
+
+/* ===== Mobile Navigation ===== */
+[dir="rtl"] .mobile-nav {
+    right: auto;
+    left: -100%;
+    border-left: none;
+    border-right: 1px solid var(--glass-border);
+}
+
+[dir="rtl"] .mobile-nav.open {
+    right: auto;
+    left: 0;
+}
+
+[dir="rtl"] .mobile-nav-list li a {
+    flex-direction: row-reverse;
+    text-align: right;
+}
+
+[dir="rtl"] .mobile-nav-list li a i {
+    margin-left: 0;
+    margin-right: 20px;
+}
+
+[dir="rtl"] .mobile-nav-header {
+    flex-direction: row-reverse;
+}
+
+[dir="rtl"] .mobile-nav-title {
+    text-align: right;
+}
+
+[dir="rtl"] .mobile-user-info {
+    text-align: right;
+}
+
+[dir="rtl"] .mobile-auth {
+    flex-direction: row-reverse;
+}
+
+/* ===== Stats ===== */
+[dir="rtl"] .stats-bar .stat-item {
+    text-align: center;
+}
+
+[dir="rtl"] .stat-card {
+    flex-direction: row-reverse;
+}
+
+[dir="rtl"] .stat-info {
+    text-align: right;
+}
+
+/* ===== Cards Grid ===== */
+[dir="rtl"] .card-grid {
+    direction: rtl;
+}
+
+/* ===== 404 Page ===== */
+[dir="rtl"] .error-page {
+    text-align: center;
+}
+
+[dir="rtl"] .error-page .error-code {
+    direction: ltr;
+    display: inline-block;
+}
+
+[dir="rtl"] .error-page .error-buttons {
+    flex-direction: row-reverse;
+}
+
+/* ===== Tables ===== */
+[dir="rtl"] table {
+    direction: rtl;
+}
+
+[dir="rtl"] th,
+[dir="rtl"] td {
+    text-align: right;
+}
+
+/* ===== Lists ===== */
+[dir="rtl"] ul,
+[dir="rtl"] ol {
+    padding-right: 1.5rem;
+    padding-left: 0;
+}
+
+[dir="rtl"] li {
+    text-align: right;
+}
+
+/* ===== Buttons ===== */
+[dir="rtl"] .btn {
+    direction: ltr;
+}
+
+[dir="rtl"] .btn i {
+    margin-left: 0.3rem;
+    margin-right: 0;
+}
+
+/* ===== Glitch Effect ===== */
+[dir="rtl"] .glitch::before,
+[dir="rtl"] .glitch::after {
+    direction: ltr;
+}
+
+/* ===== Responsive RTL ===== */
+@media (max-width: 1200px) {
+    [dir="rtl"] .footer-grid {
+        direction: rtl;
+    }
+}
+
+@media (max-width: 992px) {
+    [dir="rtl"] .timeline-line {
+        left: auto;
+        right: 20px;
+        transform: none;
+    }
+    
+    [dir="rtl"] .timeline-dot {
+        left: auto;
+        right: 20px;
+        transform: translate(0, -50%);
+    }
+    
+    [dir="rtl"] .timeline-item {
+        justify-content: flex-start;
+    }
+    
+    [dir="rtl"] .timeline-item:nth-child(odd) {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    
+    [dir="rtl"] .timeline-item:nth-child(even) {
+        padding-right: 0;
+        padding-left: 0;
+        margin-right: 0;
+    }
+    
+    [dir="rtl"] .timeline-content {
+        margin-left: 0;
+        margin-right: 40px;
+    }
+    
+    [dir="rtl"] .mobile-nav {
+        right: auto;
+        left: -100%;
+    }
+    
+    [dir="rtl"] .mobile-nav.open {
+        right: auto;
+        left: 0;
+    }
+}
+
+@media (max-width: 768px) {
+    [dir="rtl"] .footer-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    [dir="rtl"] .hero-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    [dir="rtl"] .hero-buttons .btn {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+    [dir="rtl"] .auth-buttons .btn {
+        font-size: 0.7rem;
+        padding: 0.3rem 0.8rem;
+    }
+}
+
+/* ===== RTL + LTR Hybrid ===== */
+[dir="rtl"] .ltr {
+    direction: ltr !important;
+    text-align: left !important;
+}
+
+[dir="rtl"] .ltr-text {
+    direction: ltr !important;
+}
+
+[dir="rtl"] .rtl {
+    direction: rtl !important;
+    text-align: right !important;
+}
+
+/* ===== Code Blocks ===== */
+[dir="rtl"] pre,
+[dir="rtl"] code {
+    direction: ltr !important;
+    text-align: left !important;
+}
+
+[dir="rtl"] .code-block {
+    direction: ltr !important;
+}
+
+/* ===== Language Switcher Button ===== */
+[dir="rtl"] .lang-current {
+    direction: ltr;
+}
+
+[dir="rtl"] .lang-current .lang-arrow {
+    margin-left: 0;
+    margin-right: 0.3rem;
+}
+
+/* ===== Search Icon ===== */
+[dir="rtl"] .search-toggle {
+    transform: scaleX(-1);
+}
+
+/* ===== Social Media Icons ===== */
+[dir="rtl"] .footer-social a {
+    display: inline-block;
+}
+
+/* ===== Quiz/Game Components ===== */
+[dir="rtl"] .quiz-option {
+    text-align: right;
+}
+
+[dir="rtl"] .quiz-option .option-letter {
+    margin-left: 0.8rem;
+    margin-right: 0;
+}
+
+[dir="rtl"] .game-card {
+    text-align: center;
+}
+
+/* ===== Experiment Cards ===== */
+[dir="rtl"] .experiment-card {
+    text-align: center;
+}
+
+[dir="rtl"] .experiment-card .experiment-tag {
+    direction: ltr;
+}
+
+/* ===== Museum Rooms ===== */
+[dir="rtl"] .museum-room {
+    text-align: center;
+}
+
+[dir="rtl"] .museum-room .room-tag {
+    direction: ltr;
+}
+
+/* ===== People Cards ===== */
+[dir="rtl"] .person-card {
+    text-align: center;
+}
+
+/* ===== Timeline Items with Icons ===== */
+[dir="rtl"] .timeline-icon {
+    margin-left: 0.5rem;
+    margin-right: 0;
+}
+
+/* ===== Filter Buttons ===== */
+[dir="rtl"] .filter-btn {
+    direction: ltr;
+}
+
+/* ===== Language Dropdown Items ===== */
+[dir="rtl"] .lang-dropdown li a {
+    direction: ltr;
+    text-align: right;
+}
+
+/* ===== User Dropdown Items ===== */
+[dir="rtl"] .user-dropdown li a i {
+    margin-left: 0.5rem;
+    margin-right: 0;
+}
+
+/* ===== Progress Bars ===== */
+[dir="rtl"] .progress-bar {
+    direction: ltr;
+}
+
+[dir="rtl"] .progress-fill {
+    direction: ltr;
+}
+
+/* ===== Charts ===== */
+[dir="rtl"] .chart-container {
+    direction: ltr;
+}
+
+/* ===== Tooltips ===== */
+[dir="rtl"] .tooltip {
+    direction: ltr;
+}
+
+/* ===== Notification ===== */
+[dir="rtl"] .notification {
+    text-align: right;
+}
+
+/* ===== Tags ===== */
+[dir="rtl"] .tag {
+    direction: ltr;
+    display: inline-block;
+}
+
+/* ===== Date/Time ===== */
+[dir="rtl"] .date-time {
+    direction: ltr;
+}
+
+/* ===== Numbers ===== */
+[dir="rtl"] .number {
+    direction: ltr;
+}
+
+/* ===== Stats Counter ===== */
+[dir="rtl"] .counter {
+    direction: ltr;
+}
+
+/* ===== Print RTL ===== */
+@media print {
+    [dir="rtl"] {
+        text-align: right !important;
+    }
+    
+    [dir="rtl"] .ltr {
+        direction: ltr !important;
+    }
+}
